@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .quizContainer {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 600px;
+  }
+  
+  .question {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  #optionsContainer {
+    display: flex;
+    justify-content: space-around;  /* Kjo do t’i vendosë përgjigjet me hapësira të barabarta */
+    flex-wrap: wrap;                /* Lejon përgjigjet të kalojnë në rreshta të rinj nëse ka nevojë */
+  }
+  
+  .option {
+    margin: 10px;
+    padding: 15px 25px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+  }
+  
+  .option:hover {
+    background-color: #0056b3;
+  }
+  
+  #feedback {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  #nextBtn, #backToMemoryBtn {
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  #nextBtn:hover, #backToMemoryBtn:hover {
+    background-color: #218838;
+  }
+  
+  #backToMemoryBtn {
+    background-color: #ffc107;
+    color: black;
+  }
+  
+  #backToMemoryBtn:hover {
+    background-color: #e0a800;
+  }
